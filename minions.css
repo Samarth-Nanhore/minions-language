@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    width: 50;
+    
+ }
+  #userText{
+    width: 90%;
+    height: 10vh;
+    display: block;
+    margin: 3rem;
+    padding: 1rem;
+ } 
+
+ #btn-translate{
+    border-radius: 2px;
+    font-size: 20px;
+    background-color: #f8fafc;
+ }
+
+#btn-translate:hover{
+    background-color:#facc15;
+    transition: 0.7s;
+}
+#output{
+    border: 1px solid black;
+    height: 5vh;
+    width: 90%;
+    margin: 3rem;
+    padding: 1rem;
+}
+ .heading{
+   color: #facc15;
+ }
