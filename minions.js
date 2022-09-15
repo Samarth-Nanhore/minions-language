@@ -14,7 +14,7 @@ function getTranslationURL(engtext) {
 // if the error occur
 function errorHandler(error) {
     console.log("error occured", error);
-    alert("Oops server error! try again after some time")
+    alert("Server error! try again after some time")
 }
 
 // processing: fetching translated data from server to the client browser
