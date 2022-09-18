@@ -2,6 +2,7 @@
 var btn = document.querySelector("#btn-translate");
 var user = document.querySelector("#userText");
 var result = document.querySelector("#output");
+var heading = document.querySelector(".heading");
 
 //API 
 var serverAPI = "https://api.funtranslations.com/translate/minion.json"
@@ -19,16 +20,20 @@ function errorHandler(error) {
 
 // processing: fetching translated data from server to the client browser
 function clickHandler() {
-    var inputText = user.value;
+    var inputText = user.value; //.value use to get value from <textarea>
 
     // calling server for processing
     fetch(getTranslationURL(inputText))
         .then(response => response.json())
         .then(json => {
-            var translatedText = json.contents.translated;
-            result.innerText = translatedText; // output
+            result.innerText = json.contents.translated;
+             // output
         })
         .catch(errorHandler)
+
+        document.body.style.backgroundColor = "#facc15";
+        heading.style.color = "black";
+
 };
 
 // initiate server call button
