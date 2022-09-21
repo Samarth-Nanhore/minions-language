@@ -1,4 +1,4 @@
-<h1>mark6: "minions speak" App</h1>
+<h1>markSix: "minions speak" App</h1>
 <h2>site link: https://speaks-minions.netlify.app/</h2>
 
 ####Tech Stack:
